@@ -1,0 +1,254 @@
+body {
+  background-color: #3B7A4E; 
+  margin: 0;
+  font-family: sans-serif; 
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.form-container, form {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.banner {
+  position: relative;             
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('static/IMAGES/Background.jpg.jpg');
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); 
+  z-index: 1;                      
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.content h1 {
+  margin-top: 80px;
+  font-size: 2.5em;
+}
+
+.content p {
+  line-height: 25px;   
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px; 
+  background-color: #c8a346; 
+}
+
+.Logo {
+  height: 80px; 
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  font-size: 1.30em;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: #439600b0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar ul li a:hover {
+  color: rgb(13, 109, 34);
+}
+
+h1, h2, h3 {
+  color: rgb(13, 109, 34);
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2em;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 3em;
+  font-family: "Customfont";
+  color: rgba(233, 149, 3, 0.7);
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+input, textarea {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  display: block; 
+  margin-bottom: 5px; 
+  color: #fff8f8; 
+}
+
+.login-btn {
+  background-color: rgb(13, 109, 34);
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+}
+
+.login-btn:hover {
+  background-color: rgb(255, 255, 255); 
+}
+
+footer {
+  color: #fff;
+  padding: 20px ;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 40px;
+  height: auto;
+}
+
+.gallery {
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.col, .col1, .col2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.picture, .picture1, .picture2 {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-icons img {
+    width: 30px;
+  }
+}
+
+@font-face{
+  font-family: "Customfont";
+  src: url("arabeproject/static/customfont/blooming-elegant-sans.ttf");
+}

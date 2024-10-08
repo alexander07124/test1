@@ -1,0 +1,22 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class= "content">
+    <h3>Login</h3>
+<div class="form-container">
+    <form >
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"placeholder="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+
+{% endblock content %}
