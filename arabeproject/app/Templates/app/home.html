@@ -7,66 +7,50 @@
 </head>
 <body>
 {% block content %}
+         
+    <div class="container text-center gallery">
+      <div class="row">
+          <div class="col">
+              <img class="picture1" src="{% static 'IMAGES/windlogo.png' %}" alt="Windlogo">
+        </div>
 
-<div class = "banner"> 
-  <img class="banner" src= "{% static 'IMAGES/Background.jpg' %}" > 
-  <div class = "content">
+          <div class="col">
+              <img class="picture1" src="{% static 'IMAGES/goldlogo.png' %}" alt="goldlogo">
+        </div>
+      </div>
+      <h3>WIND RESIDENCES</h3>
+      <div class="row">
+        
+          <div class="col1">
+              <img class="picture" src="{% static 'IMAGES/wind3.jpg' %}" alt="Wind 3">
+        </div>
+
+          <div class="col1">
+              <img class="picture" src="{% static 'IMAGES/wind4.jpg' %}" alt="Wind 4">
+        </div>
           
-    <h1> MISSION</h1>
-    <p> At L.C. Arabe Realty, our mission is to empower individuals and families </p>
-    <p> by providing exceptional real estate services that prioritize integrity, innovation, and client satisfaction.  </p>
-    <p>We strive to create lasting relationships through personalized guidance and a deep understanding of the unique needs </p>
-    <p>of our diverse clientele.</p>
-    
-    <h1> VISION </h1>
-      <P> Our vision is to be the leading real estate brokerage in our community, </P>
-      <P> recognized for our commitment to excellence, transparency, and sustainable development. </P>
-      <P> We aim to redefine the real estate experience by fostering a culture of trust and collaboration, </P>
-      <P> making every property transaction a seamless journey toward homeownership and investment success. </P>
-  </div> 
-</div> 
-  
-              <div class="container text-center gallery">
-                <div class="row">
-                    <div class="col">
-                        <img class="picture1" src="{% static 'IMAGES/windlogo.png' %}" alt="Windlogo">
-                  </div>
+          <div class="col1">
+              <img class="picture" src="{% static 'IMAGES/wind5.jpg' %}" alt="Wind 5">
+        </div>
+      </div>
+      <h3>GOLD RESIDENCES</h3>
+      <div class="row">
+        
+        <div class="col2">
+          <img class="picture2" src="{% static 'IMAGES/gold1.png' %}" alt="gold 1">
+      </div>
 
-                    <div class="col">
-                        <img class="picture1" src="{% static 'IMAGES/goldlogo.png' %}" alt="goldlogo">
-                  </div>
-                </div>
-                <h3>WIND RESIDENCES</h3>
-                <div class="row">
-                  
-                    <div class="col1">
-                        <img class="picture" src="{% static 'IMAGES/wind3.jpg' %}" alt="Wind 3">
-                  </div>
+        <div class="col2">
+          <img class="picture2" src="{% static 'IMAGES/gold2.png' %}" alt="gold 2">
+      </div>
 
-                    <div class="col1">
-                        <img class="picture" src="{% static 'IMAGES/wind4.jpg' %}" alt="Wind 4">
-                  </div>
-                    
-                    <div class="col1">
-                        <img class="picture" src="{% static 'IMAGES/wind5.jpg' %}" alt="Wind 5">
-                  </div>
-                </div>
-                <h3>GOLD RESIDENCES</h3>
-                <div class="row">
-                  
-                  <div class="col2">
-                    <img class="picture2" src="{% static 'IMAGES/gold1.png' %}" alt="gold 1">
-                </div>
+      <div class="col2">
+        <img class="picture2" src="{% static 'IMAGES/gold3.png' %}" alt="gold 3">
+    </div>
+      </div>
+  </div>
 
-                  <div class="col2">
-                    <img class="picture2" src="{% static 'IMAGES/gold2.png' %}" alt="gold 2">
-                </div>
-
-                <div class="col2">
-                  <img class="picture2" src="{% static 'IMAGES/gold3.png' %}" alt="gold 3">
-              </div>
-                </div>
-            </div>
+              
 
             
 {% endblock content %}
